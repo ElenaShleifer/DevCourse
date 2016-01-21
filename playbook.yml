@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+  - name: Install git
+    yum: name=git state=latest
+    become: yes
+    become_method: sudo
+
